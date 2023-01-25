@@ -28,13 +28,13 @@ public protocol CellData {
     /// for compairing the content, if it was modified
     func hash() -> [Int]
 
-    public func prepare(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath)
+    func prepare(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath)
     
-    public func prepare(cell: UICollectionViewCell, for collectionView: UICollectionView, indexPath: IndexPath)
+    func prepare(cell: UICollectionViewCell, for collectionView: UICollectionView, indexPath: IndexPath)
     
-    public func didEndDisplaying(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath)
+    func didEndDisplaying(cell: UITableViewCell, for tableView: UITableView, indexPath: IndexPath)
     
-    public func didEndDisplaying(cell: UICollectionViewCell, for tableView: UICollectionView, indexPath: IndexPath)
+    func didEndDisplaying(cell: UICollectionViewCell, for tableView: UICollectionView, indexPath: IndexPath)
     
     /// Creates cell instance, DO NOT SET CONTENT IN THIS METHOD
     /// - Returns: Table cell
