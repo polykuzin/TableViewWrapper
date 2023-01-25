@@ -12,7 +12,7 @@ public typealias State = ArraySection<SectionState, Element>
 
 public struct Element: Differentiable, Hashable {
     
-    var content : CellData
+    public var content : CellData
     
     public init(content: CellData) {
         self.content = content
